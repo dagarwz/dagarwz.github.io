@@ -95,6 +95,16 @@ h2 {
   top: 60px;
 }
 
+#cart-number {
+  position: absolute;
+  width: 129px;
+  height: 66px;
+  left: 1305px;
+  top: 60px;
+  color: rgb(219, 166, 141);
+  font-weight: 1000px;
+}
+
 .menu-items:hover {
   transform: scale(1.2);
 }
@@ -528,6 +538,7 @@ p10:hover {
 #add-to-cart:hover {
   background-color: rgb(221, 220, 220);
   color: black;
+  cursor: pointer;
 }
 p11 {
   position: absolute;

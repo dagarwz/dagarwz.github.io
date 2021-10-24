@@ -28,7 +28,10 @@
     <h2 id="order" class="nav">ORDER</h2>
     <h2 id="contact" class="nav">CONTACT</h2>
     <h2 id="about" class="nav">ABOUT</h2>
-    <a href="cart.html"><h2 id="cart" class="nav">CART(0)</h2></a>
+    <a href="cart.html"
+      ><h2 id="cart" class="nav">CART:</h2>
+      <h2 class="nav" id="cart-number">0</h2></a
+    >
   </head>
   <body>
     <!-- Product Detail Page (Blackberry) -->
@@ -58,8 +61,13 @@
     </select>
     <p10>Nutritional/Allergen Info</p10>
     <!-- Add to cart -->
-    <button id="add-to-cart">ADD TO CART</button>
-    <p11>$1.75</p11>
+    <button
+      id="add-to-cart"
+      onclick="added('add-to-cart', 'ADDED!', 'ADD TO CART')"
+    >
+      ADD TO CART
+    </button>
+    <!-- will implement this in 6b lol <p11>$1.75</p11> -->
     <img
       id="product-detail-image"
       src="images/product-detail-image.jpeg"
