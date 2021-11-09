@@ -20,8 +20,9 @@ for (item of cart) {
   clone.querySelector(".itemQty").innerText = item.productQty
   clone.querySelector(".itemPrice").innerText = item.productPrice
   clone.querySelector(".itemTotal").innerText = item.productTotalPrice
+  // clone.querySelector(".cart-num").innerText = item.cartTotalItems
 
-  console.log(item)
+  // console.log(item)
 
   const product = item
   clone
@@ -29,11 +30,8 @@ for (item of cart) {
     .addEventListener("click", function (event) {
       var buttonClicked = event.target
       buttonClicked.parentElement.parentElement.remove()
-      // console.log("click")
-      // delete item      // delete event.target.parentNode.parentNode
-      // delete product
-      // console.log(event.target.parentNode.parentNode)
-      // console.log(product)
+      cart.splice(cart.indexOf(item))
+      localStorage.setItem("savedCart", JSON.stringify(cart))
     })
 
   box.appendChild(clone)

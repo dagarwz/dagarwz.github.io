@@ -1,5 +1,6 @@
 const savedCartLS = JSON.parse(localStorage.getItem("savedCart"))
-console.log(savedCartLS)
+
+// console.log(savedCartLS)
 let cart
 if (savedCartLS == null) {
   cart = []
@@ -23,6 +24,7 @@ function added(button, text, textToChangeBackTo) {
   cartNumberString.textContent = cartNumber
 
   const product = {
+    // cartTotalItems: cartNumber,
     productName: "Original",
     productGlaze: document.getElementById("glaze").value,
     productQty: document.getElementById("quantity").value,
