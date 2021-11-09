@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bun Bun Bake Shop Homepage</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bun Bun Bake Shop Title and Logo -->
+    <a href="index.html"><h1>bun bun bake shop</h1></a>
+    <a href="index.html"
+      ><img id="logo" src="images/roll-vector.png" alt="roll illustration logo"
+    /></a>
+    <!-- Main Navigation -->
+    <a href="menu.html"><h2 id="menu" class="nav active">MENU</h2></a>
+    <h2 id="order" class="nav">ORDER</h2>
+    <h2 id="contact" class="nav">CONTACT</h2>
+    <h2 id="about" class="nav">ABOUT</h2>
+    <a href="cart.html"
+      ><h2 id="cart" class="nav">CART:</h2>
+      <h2 class="nav" id="cart-number">0</h2></a
+    >
+  </head>
+  <body>
+    <!-- Product Detail Page (Blackberry) -->
+    <script src="main.js"></script>
+    <a href="menu.html" id="back">&#5176; back to main menu</a>
+    <p4>You're on a roll!</p4>
+    <p5>Blackberry</p5>
+    <p6
+      >Here is a series of text that explains the flavor and composition of this
+      roll.</p6
+    >
+    <!-- Quantity of Rolls -->
+    <p7>how many?</p7>
+    <select name="quantity" id="quantity">
+      <option value="1">1</option>
+      <option value="3">3</option>
+      <option value="6">6</option>
+      <option value="12">12</option>
+    </select>
+    <!-- Glaze Selection -->
+    <p8>try a glaze!</p8>
+    <select name="glaze" id="glaze">
+      <option value="None">None</option>
+      <option value="Sugar-milk">Sugar-Milk</option>
+      <option value="Vanilla-Milk">Vanilla-Milk</option>
+      <option value="Double-Chocolate">Double-Chocolate</option>
+    </select>
+    <p10>Nutritional/Allergen Info</p10>
+    <!-- Add to cart -->
+    <button
+      id="add-to-cart"
+      onclick="added('add-to-cart', 'ADDED!', 'ADD TO CART')"
+    >
+      ADD TO CART
+    </button>
+    <!-- will implement this in 6b lol <p11>$1.75</p11> -->
+    <img
+      id="product-detail-image"
+      src="images/product-detail-image.jpeg"
+      alt="blackberry roll"
+    />
+  </body>
+  <!-- Footer Nav -->
+  <footer>
+    <h2 id="fb" class="nav">FACEBOOK</h2>
+    <h2 id="ig" class="nav">INSTA</h2>
+  </footer>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bun Bun Bake Shop Homepage</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Main Title and Logo -->
+    <a href="index.html"><h1>bun bun bake shop</h1></a>
+    <a href="index.html"
+      ><img id="logo" src="images/roll-vector.png" alt="roll illustration logo"
+    /></a>
+    <!-- Main Navigation -->
+    <a href="menu.html"><h2 id="menu" class="nav">MENU</h2></a>
+    <h2 id="order" class="nav">ORDER</h2>
+    <h2 id="contact" class="nav">CONTACT</h2>
+    <h2 id="about" class="nav">ABOUT</h2>
+    <a href="cart.html"
+      ><h2 id="cart" class="nav active">CART:</h2>
+      <h2 class="nav" id="cart-number">0</h2></a
+    >
+    <script defer src="cart.js"></script>
+    <div id="cart-summary-box">
+      <h3 id="shopping-cart">Shopping Cart</h3>
+      <table id="cart-table">
+        <tr>
+          <th>Roll</th>
+          <th>Price</th>
+          <th>Qty</th>
+          <th>Glaze</th>
+          <th>Total</th>
+        </tr>
+        <template id="line-item-box-template">
+          <tr id="line-item-box">
+            <!-- <div id="line-item-box"> -->
+            <td>
+              <img
+                id="cart-product-img"
+                src="images/product-detail-image.jpeg"
+                alt="original roll"
+              />
+              <h9 class="itemName">Original</h9>
+            </td>
+            <td id="price-r1" class="itemPrice">$1.75</td>
+            <td class="itemQty" name="quantity" id="qty-r1">1</td>
+            <td class="itemGlaze" name="glaze" id="glaze-r1">glaze</td>
+            <td class="itemTotal" id="total-r1">$1.75</td>
+
+            <td><h10 class="itemDelete">Delete</h10></td>
+            <!-- </div> -->
+          </tr>
+        </template>
+      </table>
+    </div>
+    <!-- <div id="order-summary-box">
+      <h3 id="order-summary">Order Summary</h3>
+      <h7>Subtotal</h7>
+      <h8>$1.75</h8>
+      <button id="checkout-button">CHECKOUT</button>
+    </div> -->
+  </body>
+  <footer>
+    <!-- Footer Nav -->
+    <h2 id="fb" class="nav">FACEBOOK</h2>
+    <h2 id="ig" class="nav">INSTA</h2>
+  </footer>
+</html>
