@@ -22,7 +22,7 @@ nav {
 .container img {
   width: 100%;
   position: absolute;
-  height: 100vh;
+  height: 110vh;
   object-fit: cover;
   z-index: -1;
 }
