@@ -6,6 +6,15 @@
   /* font-family: "Poppins", sans-serif; */
 }
 
+nav {
+  color: white;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  padding: 3rem 10rem;
+  justify-content: space-between;
+}
+
 .container {
   height: 100vh;
 }
@@ -33,4 +42,27 @@
   left: 50%;
   font-size: 6rem;
   transform: translate(-50%, -30%);
+}
+
+.content {
+  width: 100%;
+  background: white;
+  min-height: 100vh;
+  z-index: 2;
+  position: absolute;
+}
+
+.content-images {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 60vh;
+  text-align: center;
+  width: auto;
+  height: auto;
+}
+
+.text {
+  padding: 2rem 20rem;
+  font-size: 1.1rem;
 }
