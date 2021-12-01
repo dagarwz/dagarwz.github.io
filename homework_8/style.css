@@ -67,9 +67,43 @@ nav {
 .content {
   width: 100%;
   background: white;
-  min-height: 100vh;
+  min-height: 200vh;
   z-index: 2;
   position: absolute;
+}
+
+.content4real {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img_Section {
+  margin-top: 20px;
+  width: 45%;
+  margin-right: 3%;
+  margin-left: 2%;
+}
+
+.contentimg {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.itinerary {
+  width: 100%;
+  background: white;
+  height: 100vh;
+  z-index: 2;
+  position: absolute;
+}
+
+.itinSection {
+  width: 100%;
+  display: flex;
+}
+
+.itinImg {
+  width: 30%;
 }
 
 .content-images {
@@ -82,14 +116,6 @@ nav {
   /* padding: 50px; */
   /* width: auto;
   height: auto; */
-}
-
-.itinerary {
-  width: 100%;
-  background: white;
-  min-height: 100vh;
-  z-index: 2;
-  position: absolute;
 }
 
 .itinerary-images {
@@ -115,7 +141,17 @@ nav {
   /* padding: 20px; */
 }
 
+.itinerary-container {
+  width: 400px;
+  /* margin: 20px; */
+  /* padding: 20px; */
+}
+
 .img-container img {
+  width: 100%;
+}
+
+.itinerary-container img {
   width: 100%;
 }
 
@@ -126,6 +162,8 @@ nav {
   margin: auto;
   grid-template-columns: [col]10fr [col]2fr [col]2fr [col]1fr;
   grid-template-rows: [row]1fr;
+  position: fixed;
+  top: 0px;
 }
 
 .ng_item {
@@ -161,4 +199,9 @@ nav {
 
 .row1 {
   height: 20%;
+}
+
+.full-page {
+  /* height: 90vh; */
+  overflow: scroll;
 }
