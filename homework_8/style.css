@@ -17,6 +17,8 @@ nav {
 
 .container {
   height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* .container img {
@@ -33,6 +35,8 @@ nav {
   height: 110vh;
   object-fit: cover;
   z-index: 2;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .background {
@@ -43,11 +47,13 @@ nav {
   height: 110vh;
   object-fit: cover;
   z-index: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @font-face {
-  src: "./SonderSlab-BlackRough.otf";
   font-family: Sonder;
+  src: url("./SonderSans-BlackRough.otf") format("opentype");
 }
 
 .main-title {
@@ -59,6 +65,7 @@ nav {
   position: absolute;
   top: 25%;
   left: 50%;
+  /* font-size: 10vw; */
   font-size: 6rem;
   transform: translate(-50%, -30%);
   z-index: 1;
@@ -104,6 +111,11 @@ nav {
 
 .itinImg {
   width: 30%;
+  /* align-tracks: top; */
+  align-self: start;
+  /* width: 200px;
+  height: auto;
+  overflow: hidden; */
 }
 
 .content-images {
