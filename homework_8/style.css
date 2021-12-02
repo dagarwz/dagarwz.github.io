@@ -66,7 +66,7 @@ nav {
   top: 25%;
   left: 50%;
   /* font-size: 10vw; */
-  font-size: 6rem;
+  font-size: 7rem;
   transform: translate(-50%, -30%);
   z-index: 1;
 }
@@ -84,16 +84,33 @@ nav {
   flex-wrap: wrap;
 }
 
-.img_Section {
+/* .img_Section {
   margin-top: 20px;
   width: 45%;
   margin-right: 3%;
   margin-left: 2%;
+} */
+
+.img_Section {
+  margin-top: 35px;
+  width: 45%;
+  margin-right: 3%;
+  margin-left: 2%;
+  /* justify-content: center;
+  display: flex; */
 }
 
-.contentimg {
+/* .contentimg {
   margin-bottom: 20px;
   width: 100%;
+} */
+
+.contentimg {
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: 70%;
 }
 
 .itinerary {
@@ -116,6 +133,10 @@ nav {
   /* width: 200px;
   height: auto;
   overflow: hidden; */
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .content-images {
@@ -168,7 +189,9 @@ nav {
 }
 
 .nav-grid {
-  display: grid;
+  display: flex;
+  align-items: center;
+  opacity: 60%;
   width: 100%;
   height: 50px;
   margin: auto;
@@ -176,11 +199,32 @@ nav {
   grid-template-rows: [row]1fr;
   position: fixed;
   top: 0px;
+  /* background-color: #d4deea; */
+  background-color: #f9fbfe;
+}
+
+.nav-left {
+  flex: 55%;
+  margin-left: 5%;
+  display: flex;
+}
+
+.logo {
+}
+
+.nav-right {
+  flex: 30%;
+  display: flex;
+  /* flex-wrap: wrap; */
+  margin-right: 5%;
 }
 
 .ng_item {
-  font-size: 14px;
+  font-size: 16px;
+  font-family: Sonder;
+  font-weight: bold;
   display: flex;
+  margin-right: 30px;
   justify-content: flex-start;
   align-items: center;
 }
@@ -216,4 +260,9 @@ nav {
 .full-page {
   /* height: 90vh; */
   overflow: scroll;
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: smaller;
 }
