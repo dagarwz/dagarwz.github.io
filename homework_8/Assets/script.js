@@ -5,13 +5,13 @@ timeline
   .to(".person", 3, { y: -200 }, "-=3")
   .fromTo(".background", { y: -50 }, { y: 0, duration: 3 }, "-=3")
   .to(".content", 3, { top: "0%" }, "-=3")
-  .fromTo(".content-images", { opacity: 0 }, { opacity: 1, duration: 1 })
-  .fromTo(".text", { opacity: 0 }, { opacity: 1, duration: 1 })
+  .fromTo(".itinSection", { opacity: 0.8 }, { opacity: 1, duration: 1 })
+// .fromTo("", { opacity: 0.5 }, { opacity: 1, duration: 1 })
 // .fromTo(".main-title", { y: -50 }, { y: 0, duration: 3 }, "-=3")
 
 let scene = new ScrollMagic.Scene({
   triggerElement: "section",
-  duration: "800%",
+  duration: "300%",
   triggerHook: 0,
 })
 
@@ -41,9 +41,9 @@ var scenes = {
   scene2: {
     contentSection: "anchor1",
   },
-  scene3: {
-    itinSection: "anchor2",
-  },
+  // scene3: {
+  //   itinSection: "anchor2",
+  // },
 }
 
 for (var key in scenes) {

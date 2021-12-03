@@ -67,7 +67,7 @@ h2 {
 
 @font-face {
   font-family: Sonder;
-  src: url("./SonderSans-BlackRough.otf") format("opentype");
+  src: url("./Fonts/SonderSans-BlackRough.otf") format("opentype");
 }
 
 .main-title {
