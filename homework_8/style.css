@@ -20,11 +20,13 @@ h1 {
   font-family: "Sonder";
   padding: 60px;
   font-size: 50px;
+  color: rgb(105, 103, 103);
 }
 
 h2 {
   font-family: "Sonder";
   padding-bottom: 10px;
+  color: rgb(105, 103, 103);
 }
 
 .container {
@@ -140,7 +142,7 @@ h2 {
   align-items: center;
 }
 
-.itinSection {
+/* .itinSection {
   width: 90%;
   display: flex;
   border: 1px solid #85d3d8;
@@ -149,6 +151,17 @@ h2 {
   padding: 20px;
   box-shadow: 0 4px 8px 0 rgba(133, 211, 216, 0.5),
     0 6px 20px 0 rgba(133, 211, 216, 0.45);
+} */
+
+.itinSection {
+  width: 90%;
+  display: flex;
+  border: 1px solid rgba(133, 210, 216, 0.281);
+  border-radius: 16px;
+  margin-bottom: 50px;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(133, 210, 216, 0.281),
+    0 6px 20px 0 rgba(133, 211, 216, 0.281);
 }
 
 .itinImg {
@@ -242,7 +255,7 @@ h2 {
   /* flex: 30%;
   display: flex; */
   /* flex-wrap: wrap; */
-  margin-right: 5%;
+  margin-right: 3%;
 }
 
 .ng_item {
@@ -291,4 +304,30 @@ h2 {
 p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: smaller;
+}
+
+li {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: smaller;
+  color: rgb(105, 103, 103);
+}
+
+.place {
+  font-family: "Sonder";
+  color: rgba(7, 150, 160, 0.5);
+}
+
+/*unvisited link*/
+a:link {
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
 }
