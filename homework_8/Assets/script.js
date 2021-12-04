@@ -1,6 +1,7 @@
 let controller = new ScrollMagic.Controller()
 let timeline = new TimelineMax()
 
+// below code enables parallax effect and increases opacity of itinerary section triggered by scrolling
 timeline
   .to(".person", 3, { y: -200 }, "-=3")
   .fromTo(".background", { y: -50 }, { y: 0, duration: 3 }, "-=3")
@@ -25,6 +26,7 @@ var controller2 = new ScrollMagic.Controller({
   },
 })
 
+//below code triggers auto-scroll upon click of nav elements
 var scenes = {
   intro: {
     intro: "intro-anchor",
